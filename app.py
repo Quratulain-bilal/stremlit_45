@@ -1,3 +1,4 @@
+
 import streamlit as st
 import os
 import io
@@ -52,17 +53,22 @@ def main():
         <style>
             /* Main background color */
             .stApp {
-                background-color: #1e1e1e;  /* Dark background like VS Code */
+                background-color: #ffffff;  /* White background */
             }
             /* Headers and text */
             h1, h2, h3, h4, h5, h6, p, div, span, label {
-                color: #ffffff !important;  /* White text for dark background */
+                color: #000000 !important;  /* Black text for white background */
             }
             /* Dropdown menu (Select a question) */
             .stSelectbox > div > div > div > input {
-                background-color: #333333;  /* Dark gray background */
-                color: #ffffff !important;  /* White text */
+                background-color: #ffffff;  /* White background */
+                color: #000000 !important;  /* Black text */
                 border-radius: 5px;
+            }
+            /* Dropdown options */
+            .stSelectbox > div > div > div > div > div {
+                background-color: #ffffff;  /* White background */
+                color: #000000 !important;  /* Black text */
             }
             /* Code blocks (Python code preview) */
             .stCodeBlock {
@@ -90,7 +96,7 @@ def main():
             }
             /* Text area (Code editor) */
             .stTextArea textarea {
-                background-color: #333333;  /* Dark gray background */
+                background-color: #1e1e1e;  /* Dark background like VS Code */
                 color: #d4d4d4;  /* Light gray text */
                 border-radius: 5px;
                 font-family: 'Consolas', monospace;
