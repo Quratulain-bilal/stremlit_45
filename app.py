@@ -52,11 +52,48 @@ def main():
         <style>
             /* Main background color */
             .stApp {
-                background-color: #000000;  /* Black background */
+                background-color: #1e1e1e;  /* Dark background like VS Code */
             }
             /* Headers and text */
             h1, h2, h3, h4, h5, h6, p, div, span, label {
-                color: #ffffff !important;  /* White text for black background */
+                color: #ffffff !important;  /* White text for dark background */
+            }
+            /* Dropdown menu (Select a question) */
+            .stSelectbox > div > div > div > input {
+                background-color: #333333;  /* Dark gray background */
+                color: #ffffff !important;  /* White text */
+                border-radius: 5px;
+            }
+            /* Code blocks (Python code preview) */
+            .stCodeBlock {
+                background-color: #1e1e1e;  /* Dark background like VS Code */
+                color: #d4d4d4;  /* Light gray text */
+                border-radius: 5px;
+                padding: 10px;
+                font-family: 'Consolas', monospace;
+            }
+            /* Syntax highlighting for Python code */
+            .stCodeBlock .keyword {
+                color: #569cd6;  /* Blue for keywords */
+            }
+            .stCodeBlock .string {
+                color: #ce9178;  /* Orange for strings */
+            }
+            .stCodeBlock .comment {
+                color: #6a9955;  /* Green for comments */
+            }
+            .stCodeBlock .function {
+                color: #dcdcaa;  /* Yellow for functions */
+            }
+            .stCodeBlock .number {
+                color: #b5cea8;  /* Light green for numbers */
+            }
+            /* Text area (Code editor) */
+            .stTextArea textarea {
+                background-color: #333333;  /* Dark gray background */
+                color: #d4d4d4;  /* Light gray text */
+                border-radius: 5px;
+                font-family: 'Consolas', monospace;
             }
             /* Buttons */
             .stButton button {
@@ -68,19 +105,6 @@ def main():
             }
             .stButton button:hover {
                 background-color: #45a049;
-            }
-            /* Code blocks */
-            .stCodeBlock {
-                background-color: #333333;  /* Dark gray for code blocks */
-                color: #ffffff;  /* White text for code blocks */
-                border-radius: 5px;
-                padding: 10px;
-            }
-            /* Text area */
-            .stTextArea textarea {
-                background-color: #333333;  /* Dark gray for text area */
-                color: #ffffff;  /* White text for text area */
-                border-radius: 5px;
             }
             /* Progress bar */
             .stProgress > div > div {
