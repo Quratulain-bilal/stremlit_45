@@ -55,8 +55,8 @@ def main():
                 background-color: #ffffff;
             }
             /* Headers and text */
-            h1, h2, h3, h4, h5, h6 {
-                color: #2c3e50;
+            h1, h2, h3, h4, h5, h6, p, div, span, label {
+                color: #000000 !important;  /* Ensure text is black */
             }
             /* Buttons */
             .stButton button {
@@ -79,6 +79,7 @@ def main():
             .stTextArea textarea {
                 background-color: #f5f5f5;
                 border-radius: 5px;
+                color: #000000;  /* Ensure text in textarea is black */
             }
             /* Progress bar */
             .stProgress > div > div {
