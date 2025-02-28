@@ -1,4 +1,3 @@
-
 import streamlit as st
 import os
 import io
@@ -85,9 +84,16 @@ def main():
             .stProgress > div > div {
                 background-color: #4CAF50;
             }
-            /* Python libraries section */
+            /* Python libraries section - Default (Desktop) */
             .stMarkdown p {
                 color: #000000 !important;  /* Black text for Python libraries section */
+            }
+            /* Mobile-specific styles */
+            @media only screen and (max-width: 600px) {
+                /* Python libraries section - Mobile */
+                .stMarkdown p {
+                    color: #000000 !important;  /* Black text for Python libraries section on mobile */
+                }
             }
         </style>
     """, unsafe_allow_html=True)
