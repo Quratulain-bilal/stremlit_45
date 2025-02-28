@@ -52,11 +52,11 @@ def main():
         <style>
             /* Main background color */
             .stApp {
-                background-color: #ffffff;
+                background-color: #000000;  /* Black background */
             }
             /* Headers and text */
             h1, h2, h3, h4, h5, h6, p, div, span, label {
-                color: #000000 !important;  /* Ensure text is black */
+                color: #ffffff !important;  /* White text for black background */
             }
             /* Buttons */
             .stButton button {
@@ -71,15 +71,16 @@ def main():
             }
             /* Code blocks */
             .stCodeBlock {
-                background-color: #f5f5f5;
+                background-color: #333333;  /* Dark gray for code blocks */
+                color: #ffffff;  /* White text for code blocks */
                 border-radius: 5px;
                 padding: 10px;
             }
             /* Text area */
             .stTextArea textarea {
-                background-color: #f5f5f5;
+                background-color: #333333;  /* Dark gray for text area */
+                color: #ffffff;  /* White text for text area */
                 border-radius: 5px;
-                color: #000000;  /* Ensure text in textarea is black */
             }
             /* Progress bar */
             .stProgress > div > div {
