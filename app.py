@@ -53,53 +53,11 @@ def main():
         <style>
             /* Main background color */
             .stApp {
-                background-color: #ffffff;  /* White background */
+                background-color: #ffffff;
             }
             /* Headers and text */
-            h1, h2, h3, h4, h5, h6, p, div, span, label {
-                color: #000000 !important;  /* Black text for white background */
-            }
-            /* Dropdown menu (Select a question) */
-            .stSelectbox > div > div > div > input {
-                background-color: #ffffff;  /* White background */
-                color: #000000 !important;  /* Black text */
-                border-radius: 5px;
-            }
-            /* Dropdown options */
-            .stSelectbox > div > div > div > div > div {
-                background-color: #ffffff;  /* White background */
-                color: #000000 !important;  /* Black text */
-            }
-            /* Code blocks (Python code preview) */
-            .stCodeBlock {
-                background-color: #1e1e1e;  /* Dark background like VS Code */
-                color: #d4d4d4;  /* Light gray text */
-                border-radius: 5px;
-                padding: 10px;
-                font-family: 'Consolas', monospace;
-            }
-            /* Syntax highlighting for Python code */
-            .stCodeBlock .keyword {
-                color: #569cd6;  /* Blue for keywords */
-            }
-            .stCodeBlock .string {
-                color: #ce9178;  /* Orange for strings */
-            }
-            .stCodeBlock .comment {
-                color: #6a9955;  /* Green for comments */
-            }
-            .stCodeBlock .function {
-                color: #dcdcaa;  /* Yellow for functions */
-            }
-            .stCodeBlock .number {
-                color: #b5cea8;  /* Light green for numbers */
-            }
-            /* Text area (Code editor) */
-            .stTextArea textarea {
-                background-color: #1e1e1e;  /* Dark background like VS Code */
-                color: #d4d4d4;  /* Light gray text */
-                border-radius: 5px;
-                font-family: 'Consolas', monospace;
+            h1, h2, h3, h4, h5, h6 {
+                color: #2c3e50;
             }
             /* Buttons */
             .stButton button {
@@ -112,9 +70,24 @@ def main():
             .stButton button:hover {
                 background-color: #45a049;
             }
+            /* Code blocks */
+            .stCodeBlock {
+                background-color: #f5f5f5;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            /* Text area */
+            .stTextArea textarea {
+                background-color: #f5f5f5;
+                border-radius: 5px;
+            }
             /* Progress bar */
             .stProgress > div > div {
                 background-color: #4CAF50;
+            }
+            /* Python libraries section */
+            .stMarkdown p {
+                color: #000000 !important;  /* Black text for Python libraries section */
             }
         </style>
     """, unsafe_allow_html=True)
